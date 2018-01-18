@@ -27,26 +27,24 @@
 </div>
 
 <div id="waveform"></div>
-
-
-                <div class="controls">
-                    <button id="playBtn" class="btn btn-primary">Play / Pause</button>
-                    <button id="toggleMuteBtn" class="btn btn-primary">Toggle Mute</button>
-                    <button id="setMuteOnBtn" class="btn btn-primary">
-                        Mute <i class="glyphicon glyphicon-volume-off"></i>
-                    </button>
-
-                    <button id="setMuteOffBtn" class="btn btn-primary">
-                        Unmute <i class="glyphicon glyphicon-volume-up"></i>
-                    </button>
-                </div>
+<div class="controls">
+    <button id="playBtn" class="btn btn-primary">Play / Pause</button>
+    <button id="toggleMuteBtn" class="btn btn-primary">Toggle Mute</button>
+    <button id="setMuteOnBtn" class="btn btn-primary">Mute <i class="glyphicon glyphicon-volume-off"></i></button>
+    <button id="setMuteOffBtn" class="btn btn-primary">Unmute <i class="glyphicon glyphicon-volume-up"></i></button>
+t</div>
 
 <script>
 L.mapbox.accessToken = 'pk.eyJ1Ijoibm9yYWJlbmVkaWN0IiwiYSI6ImNpdXllbjdkbzA0aHYyeWwxd3BoaDdrYzgifQ.F94DF9486D8vAprIkZSOnQ';
 var map = L.mapbox.map('map', 'mapbox.outdoors').setView([40,-100],4);
 var info = document.getElementById('info');
-// Trigger empty contents when the script
-// has loaded on the page.
+
+var mapLocations = omnivore.kml('locations.kml')
+    .on('ready', function() {
+      map.fitBounds(mapLocations.getBounds());
+    })
+    .addTo(map);
+
 empty();
 function empty() {
   info.innerHTML = '';

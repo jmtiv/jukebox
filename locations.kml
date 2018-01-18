@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<name>Locations</name>
+<open>1</open>
+  <Folder>
+    <open>1</open>
+    <Placemark id="someplace">
+        <name>Some Plaxce</name>
+        <description>
+        <![CDATA[
+        Lorem ipsum dolor sit amet.
+        ]]>
+        </description>
+        <MultiGeometry>
+            <Point>
+                <coordinates>-78.5036064,38.0408872</coordinates>
+            </Point>
+        </MultiGeometry>
+    </Placemark>
+
+    <Placemark id="someplace">
+        <name>Some Other Place</name>
+        <description>
+        <![CDATA[
+        Lorem ipsum dolor sit amet.
+        ]]>
+        </description>
+        <MultiGeometry>
+            <Point>
+                <coordinates>-90.5036064,30.0408872</coordinates>
+            </Point>
+        </MultiGeometry>
+    </Placemark>
+    <Placemark id="someplace">
+        <name>Some Other Place</name>
+        <description>
+        <![CDATA[
+        Lorem ipsum dolor sit amet.
+        ]]>
+        </description>
+        <MultiGeometry>
+            <Point>
+                <coordinates>-88.5036064,34.0408872</coordinates>
+            </Point>
+        </MultiGeometry>
+    </Placemark>
+
+  </Folder>
+</Document>
+</kml>
