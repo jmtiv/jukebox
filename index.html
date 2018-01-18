@@ -1,23 +1,30 @@
 <!DOCTYPE HTML>
 
-<html>
-
-
-
+<meta charset="utf-8">
+<title> JUKEBOX TRIAL 1 </title>
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 <link href="wavesurferstyle.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.4.0/wavesurfer.min.js"></script>
+<script src='//api.mapbox.com/mapbox.js/v3.1.0/mapbox.js'></script>
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-hash/v0.2.1/leaflet-hash.js'></script>
+<script src='//api.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.2.0/leaflet-omnivore.min.js'></script>
+<link href='//api.mapbox.com/mapbox.js/v3.1.0/mapbox.css' rel='stylesheet' />
 <script src="jukebox.js"></script>
 
+<style>
+#map {
+    height: 40vh;
+    min-height: 300px;
+}
+</style>
 
-<title> JUKEBOX TRIAL 1 </title>
+<header role="banner">
+    Jukebox Trial
+</header>
 
-
-
-
-<body>
-
-  JUKEBOX TRIAL 1
+<div id="map">
+  <div id="info"></div>
+</div>
 
 <div id="waveform"></div>
 
@@ -34,7 +41,14 @@
                     </button>
                 </div>
 
-
-</body>
-
-</html>
+<script>
+L.mapbox.accessToken = 'pk.eyJ1Ijoibm9yYWJlbmVkaWN0IiwiYSI6ImNpdXllbjdkbzA0aHYyeWwxd3BoaDdrYzgifQ.F94DF9486D8vAprIkZSOnQ';
+var map = L.mapbox.map('map', 'mapbox.outdoors').setView([40,-100],4);
+var info = document.getElementById('info');
+// Trigger empty contents when the script
+// has loaded on the page.
+empty();
+function empty() {
+  info.innerHTML = '';
+}
+</script>
