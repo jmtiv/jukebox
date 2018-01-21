@@ -6,34 +6,34 @@
   <Folder>
     <open>1</open>
     <Placemark id="someplace">
-        <name>Some Plaxce</name>
+        <name>Tigrett Junior High School, Jackson, Tennessee</name>
         <description>
         <![CDATA[
-        Lorem ipsum dolor sit amet.
+        In 1962, Gil Scott-Heron participated in the integration of this school along with two other students.
         ]]>
         </description>
         <MultiGeometry>
             <Point>
-                <coordinates>-78.5036064,38.0408872</coordinates>
+                <coordinates>35.7550897,-89.3984029</coordinates>
             </Point>
         </MultiGeometry>
     </Placemark>
 
     <Placemark id="someplace">
-        <name>Some Other Place</name>
+        <name>125th Street and Lenox Avenue, Harlem, New York</name>
         <description>
         <![CDATA[
-        Lorem ipsum dolor sit amet.
+        Scott-Heron titled his first album Small Talk at 125th and Lenox, a reference to the intersection in the heart of Harlem.
         ]]>
         </description>
         <MultiGeometry>
             <Point>
-                <coordinates>-90.5036064,30.0408872</coordinates>
+                <coordinates>40.807754,-73.9476837</coordinates>
             </Point>
         </MultiGeometry>
     </Placemark>
     <Placemark id="someplace">
-        <name>Some Other Place</name>
+        <name>Barnwell, South Carolina</name>
         <description>
         <![CDATA[
         Lorem ipsum dolor sit amet.
@@ -41,7 +41,7 @@
         </description>
         <MultiGeometry>
             <Point>
-                <coordinates>-88.5036064,34.0408872</coordinates>
+                <coordinates>33.2522693,-81.4300991</coordinates>
             </Point>
         </MultiGeometry>
     </Placemark>
