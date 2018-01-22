@@ -14,7 +14,7 @@
         </description>
         <MultiGeometry>
             <Point>
-                <coordinates>35.7550897,-89.3984029</coordinates>
+                <coordinates>-89.3984029,35.7550897</coordinates>
             </Point>
         </MultiGeometry>
     </Placemark>
@@ -28,7 +28,7 @@
         </description>
         <MultiGeometry>
             <Point>
-                <coordinates>40.807754,-73.9476837</coordinates>
+                <coordinates>-73.9476837,40.807754</coordinates>
             </Point>
         </MultiGeometry>
     </Placemark>
@@ -41,7 +41,7 @@
         </description>
         <MultiGeometry>
             <Point>
-                <coordinates>33.2522693,-81.4300991</coordinates>
+                <coordinates>-81.4300991,33.2522693</coordinates>
             </Point>
         </MultiGeometry>
     </Placemark>
