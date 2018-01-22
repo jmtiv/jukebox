@@ -45,6 +45,110 @@
             </Point>
         </MultiGeometry>
     </Placemark>
+    <Placemark id="someplace">
+        <name>Johannesburg, South Africa</name>
+        <description>
+        <![CDATA[
+        Lorem ipsum dolor sit amet.
+        ]]>
+        </description>
+        <MultiGeometry>
+            <Point>
+                <coordinates>28.0120338,-26.1968712</coordinates>
+            </Point>
+        </MultiGeometry>
+    </Placemark>
+    <Placemark id="someplace">
+        <name>Savannah River Site, South Carolina</name>
+        <description>
+        <![CDATA[
+        Lorem ipsum dolor sit amet.
+        ]]>
+        </description>
+        <MultiGeometry>
+            <Point>
+                <coordinates>-81.7142245,33.1991723</coordinates>
+            </Point>
+        </MultiGeometry>
+    </Placemark>
+    <Placemark id="someplace">
+        <name>Energy Solutions, Snelling, South Carolina</name>
+        <description>
+        <![CDATA[
+        Lorem ipsum dolor sit amet.
+        ]]>
+        </description>
+        <MultiGeometry>
+            <Point>
+                <coordinates>-81.4658483,33.2436591</coordinates>
+            </Point>
+        </MultiGeometry>
+    </Placemark>
+    <Placemark id="someplace">
+        <name>Slave Market, Charleston, South Carolina</name>
+        <description>
+        <![CDATA[
+        Lorem ipsum dolor sit amet.
+        ]]>
+        </description>
+        <MultiGeometry>
+            <Point>
+                <coordinates>-79.9294901,32.777923</coordinates>
+            </Point>
+        </MultiGeometry>
+    </Placemark>
+    <Placemark id="someplace">
+        <name>The Pentagon, Arlington, Virginia</name>
+        <description>
+        <![CDATA[
+        Lorem ipsum dolor sit amet.
+        ]]>
+        </description>
+        <MultiGeometry>
+            <Point>
+                <coordinates>-77.0573237,38.8719946</coordinates>
+            </Point>
+        </MultiGeometry>
+    </Placemark>
+    <Placemark id="someplace">
+        <name>NASA Marshall Space Flight Center, Huntsville, Alabama</name>
+        <description>
+        <![CDATA[
+        Lorem ipsum dolor sit amet.
+        ]]>
+        </description>
+        <MultiGeometry>
+            <Point>
+                <coordinates>-86.954439,34.6473526</coordinates>
+            </Point>
+        </MultiGeometry>
+    </Placemark>
+    <Placemark id="someplace">
+        <name>NASA Johnson Center, Houston, Texas</name>
+        <description>
+        <![CDATA[
+        Lorem ipsum dolor sit amet.
+        ]]>
+        </description>
+        <MultiGeometry>
+            <Point>
+                <coordinates>-95.0937335,29.5529557</coordinates>
+            </Point>
+        </MultiGeometry>
+    </Placemark>
+    <Placemark id="someplace">
+        <name>Kennedy Spaceflight launch pad, Cape Canaveral, Florida</name>
+        <description>
+        <![CDATA[
+        Lorem ipsum dolor sit amet.
+        ]]>
+        </description>
+        <MultiGeometry>
+            <Point>
+                <coordinates>-80.7424332,28.6319586</coordinates>
+            </Point>
+        </MultiGeometry>
+    </Placemark>
 
   </Folder>
 </Document>
