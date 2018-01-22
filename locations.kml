@@ -5,7 +5,7 @@
 <open>1</open>
   <Folder>
     <open>1</open>
-    <Placemark id="someplace">
+    <Placemark id="jackson-tennessee">
         <name>Tigrett Junior High School, Jackson, Tennessee</name>
         <description>
         <![CDATA[
@@ -19,7 +19,7 @@
         </MultiGeometry>
     </Placemark>
 
-    <Placemark id="someplace">
+    <Placemark id="harlem-newyork">
         <name>125th Street and Lenox Avenue, Harlem, New York</name>
         <description>
         <![CDATA[
@@ -32,7 +32,7 @@
             </Point>
         </MultiGeometry>
     </Placemark>
-    <Placemark id="someplace">
+    <Placemark id="barnwell-southcarolina">
         <name>Barnwell, South Carolina</name>
         <description>
         <![CDATA[
@@ -45,7 +45,7 @@
             </Point>
         </MultiGeometry>
     </Placemark>
-    <Placemark id="someplace">
+    <Placemark id="johannesburg-southafrica">
         <name>Johannesburg, South Africa</name>
         <description>
         <![CDATA[
@@ -58,7 +58,7 @@
             </Point>
         </MultiGeometry>
     </Placemark>
-    <Placemark id="someplace">
+    <Placemark id="savannah-river-site-southcarolina">
         <name>Savannah River Site, South Carolina</name>
         <description>
         <![CDATA[
@@ -71,7 +71,7 @@
             </Point>
         </MultiGeometry>
     </Placemark>
-    <Placemark id="someplace">
+    <Placemark id="snelling-southcarolina">
         <name>Energy Solutions, Snelling, South Carolina</name>
         <description>
         <![CDATA[
@@ -84,7 +84,7 @@
             </Point>
         </MultiGeometry>
     </Placemark>
-    <Placemark id="someplace">
+    <Placemark id="charleston-southcarolina">
         <name>Slave Market, Charleston, South Carolina</name>
         <description>
         <![CDATA[
@@ -97,7 +97,7 @@
             </Point>
         </MultiGeometry>
     </Placemark>
-    <Placemark id="someplace">
+    <Placemark id="arlington-virginia">
         <name>The Pentagon, Arlington, Virginia</name>
         <description>
         <![CDATA[
@@ -110,7 +110,7 @@
             </Point>
         </MultiGeometry>
     </Placemark>
-    <Placemark id="someplace">
+    <Placemark id="huntsville-alabama">
         <name>NASA Marshall Space Flight Center, Huntsville, Alabama</name>
         <description>
         <![CDATA[
@@ -123,7 +123,7 @@
             </Point>
         </MultiGeometry>
     </Placemark>
-    <Placemark id="someplace">
+    <Placemark id="houston-texas">
         <name>NASA Johnson Center, Houston, Texas</name>
         <description>
         <![CDATA[
@@ -136,7 +136,7 @@
             </Point>
         </MultiGeometry>
     </Placemark>
-    <Placemark id="someplace">
+    <Placemark id="cape-canaveral-florida">
         <name>Kennedy Spaceflight launch pad, Cape Canaveral, Florida</name>
         <description>
         <![CDATA[
