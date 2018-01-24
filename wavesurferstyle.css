@@ -1,12 +1,13 @@
 html {
 
   background-color:#ebeced;
-font-family: 'Roboto Slab', serif;
+font-family: 'Raleway', sans-serif;
 
 
 }
 
 body {
+
 
 }
 
@@ -22,7 +23,9 @@ body {
 
 article {
     margin-top: 40vh;
-    padding: 40px;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 0;
 }
 
 .controls{
