@@ -73,7 +73,7 @@ wavesurfer3.on('ready', function() {
         wavesurfer3.playPause();
     };
 
-    toggleMuteButton3.onclick = function() {
-        wavesurfer3.toggleMute();
-    };
+    // toggleMuteButton3.onclick = function() {
+    //     wavesurfer3.toggleMute();
+    // };
 });
