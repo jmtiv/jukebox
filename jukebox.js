@@ -19,6 +19,29 @@ var playButton = document.querySelector('#playBtn'),
         cursorWidth: 0
     });
 
+wavesurfer.load('revolution.mp3');
+
+wavesurfer.on('ready', function() {
+    playButton.onclick = function() {
+          wavesurfer.playPause();
+    };
+
+        toggleMuteButton.onclick = function() {
+            wavesurfer.toggleMute();
+    };
+});
+
+wavesurfer.load('whitey.mp3');
+
+wavesurfer.on('ready', function() {
+    playButton.onclick = function() {
+        wavesurfer.playPause();
+    };
+
+    toggleMuteButton.onclick = function() {
+        wavesurfer.toggleMute();
+    };
+});
 
 wavesurfer.load('southcarolina.mp3');
 
