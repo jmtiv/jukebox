@@ -8,9 +8,9 @@ var mapLocations = omnivore.kml('locations.kml')
     })
     .addTo(map);
 
-var playButton1 = document.querySelector('#playBtn'),
-    toggleMuteButton1 = document.querySelector('#toggleMuteBtn'),
-    timer1 = document.querySelector('#time'),
+var playButton1 = document.querySelector('#playBtn1'),
+    toggleMuteButton1 = document.querySelector('#toggleMuteBtn1'),
+    timer1 = document.querySelector('#time1'),
     wavesurfer1 = WaveSurfer.create({
         container: '#waveform-1',
         waveColor: 'violet',
@@ -32,9 +32,9 @@ wavesurfer1.on('ready', function() {
     };
 });
 
-var playButton2 = document.querySelector('#playBtn'),
-    toggleMuteButton2 = document.querySelector('#toggleMuteBtn'),
-    timer2 = document.querySelector('#time'),
+var playButton2 = document.querySelector('#playBtn2'),
+    toggleMuteButton2 = document.querySelector('#toggleMuteBtn2'),
+    timer2 = document.querySelector('#time2'),
     wavesurfer2 = WaveSurfer.create({
         container: '#waveform-2',
         waveColor: 'violet',
@@ -56,9 +56,9 @@ wavesurfer2.on('ready', function() {
 });
 
 
-var playButton3 = document.querySelector('#playBtn'),
-    toggleMuteButton3 = document.querySelector('#toggleMuteBtn'),
-    timer3 = document.querySelector('#time'),
+var playButton3 = document.querySelector('#playBtn3'),
+    toggleMuteButton3 = document.querySelector('#toggleMuteBtn3'),
+    timer3 = document.querySelector('#time3'),
     wavesurfer3 = WaveSurfer.create({
         container: '#waveform-3',
         waveColor: 'violet',
