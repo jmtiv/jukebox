@@ -8,49 +8,72 @@ var mapLocations = omnivore.kml('locations.kml')
     })
     .addTo(map);
 
-var playButton = document.querySelector('#playBtn'),
-    toggleMuteButton = document.querySelector('#toggleMuteBtn'),
-    timer = document.querySelector('#time'),
-    wavesurfer = WaveSurfer.create({
-        container: '#waveform',
+var playButton1 = document.querySelector('#playBtn'),
+    toggleMuteButton1 = document.querySelector('#toggleMuteBtn'),
+    timer1 = document.querySelector('#time'),
+    wavesurfer1 = WaveSurfer.create({
+        container: '#waveform-1',
         waveColor: 'violet',
         progressColor: 'purple',
         interact: false,
         cursorWidth: 0
     });
 
-wavesurfer.load('revolution.mp3');
 
-wavesurfer.on('ready', function() {
-    playButton.onclick = function() {
-          wavesurfer.playPause();
+wavesurfer1.load('revolution.mp3');
+
+wavesurfer1.on('ready', function() {
+    playButton1.onclick = function() {
+          wavesurfer1.playPause();
     };
 
-        toggleMuteButton.onclick = function() {
-            wavesurfer.toggleMute();
-    };
-});
-
-wavesurfer.load('whitey.mp3');
-
-wavesurfer.on('ready', function() {
-    playButton.onclick = function() {
-        wavesurfer.playPause();
-    };
-
-    toggleMuteButton.onclick = function() {
-        wavesurfer.toggleMute();
+        toggleMuteButton1.onclick = function() {
+            wavesurfer1.toggleMute();
     };
 });
 
-wavesurfer.load('southcarolina.mp3');
+var playButton2 = document.querySelector('#playBtn'),
+    toggleMuteButton2 = document.querySelector('#toggleMuteBtn'),
+    timer2 = document.querySelector('#time'),
+    wavesurfer2 = WaveSurfer.create({
+        container: '#waveform-2',
+        waveColor: 'violet',
+        progressColor: 'purple',
+        interact: false,
+        cursorWidth: 0
+    });
 
-wavesurfer.on('ready', function() {
-    playButton.onclick = function() {
-        wavesurfer.playPause();
+wavesurfer2.load('whitey.mp3');
+
+wavesurfer2.on('ready', function() {
+    playButton2.onclick = function() {
+        wavesurfer2.playPause();
     };
 
-    toggleMuteButton.onclick = function() {
-        wavesurfer.toggleMute();
+    toggleMuteButton2.onclick = function() {
+        wavesurfer2.toggleMute();
+    };
+});
+
+
+var playButton3 = document.querySelector('#playBtn'),
+    toggleMuteButton3 = document.querySelector('#toggleMuteBtn'),
+    timer3 = document.querySelector('#time'),
+    wavesurfer3 = WaveSurfer.create({
+        container: '#waveform-3',
+        waveColor: 'violet',
+        progressColor: 'purple',
+        interact: false,
+        cursorWidth: 0
+    });
+wavesurfer3.load('southcarolina.mp3');
+
+wavesurfer3.on('ready', function() {
+    playButton3.onclick = function() {
+        wavesurfer3.playPause();
+    };
+
+    toggleMuteButton3.onclick = function() {
+        wavesurfer3.toggleMute();
     };
 });
