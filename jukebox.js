@@ -13,7 +13,7 @@ var playButton1 = document.querySelector('#playBtn1'),
     timer1 = document.querySelector('#time1'),
     wavesurfer1 = WaveSurfer.create({
         container: '#waveform-1',
-        waveColor: 'violet',
+        waveColor: '#F4F4E1',
         progressColor: 'purple',
         interact: false,
         cursorWidth: 0
