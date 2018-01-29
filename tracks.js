@@ -23,8 +23,8 @@ var southcarolina = [
 
 var whitey = [
   {
-      start:
-      stop:
+      start: '',
+      stop: '',
       id: ''
   },
 ];
