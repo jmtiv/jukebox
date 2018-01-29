@@ -5,8 +5,18 @@ var info = document.getElementById('info');
 var mapLocations = omnivore.kml('locations.kml')
     .on('ready', function() {
       map.fitBounds(mapLocations.getBounds());
+      mapLocations.eachLayer(function(layer) {
+          var content = '<h2>' + layer.feature.properties.name + '</h2>' + '<p>' + layer.feature.properties.description + '</p>';
+          layer.bindPopup(content);
+      });
     })
     .addTo(map);
+
+mapLocations.on('click', function(e) {
+    e.layer.openPopup();
+});
+
+var layers = mapLocations._layers;
 
 var playButton1 = document.querySelector('#playBtn1'),
     toggleMuteButton1 = document.querySelector('#toggleMuteBtn1'),
@@ -18,7 +28,6 @@ var playButton1 = document.querySelector('#playBtn1'),
         interact: false,
         cursorWidth: 0
     });
-
 
 wavesurfer1.load('revolution.mp3');
 
@@ -77,3 +86,31 @@ wavesurfer3.on('ready', function() {
     //     wavesurfer3.toggleMute();
     // };
 });
+
+console.log(southcarolina);
+
+wavesurfer3.on('audioprocess', function() {
+    currentTime = wavesurfer3.getCurrentTime();
+    currentTime = Math.trunc(currentTime);
+    timer3.innerHTML = '';
+    timer3.innerHTML = currentTime;
+    
+    for( var i in southcarolina) {
+        startTime = southcarolina[i].start;
+        stopTime = southcarolina[i].stop;
+        locationId = southcarolina[i].id;
+        if (startTime == currentTime) {
+            openLocationPopup(locationId);
+        }
+    }
+});
+
+
+function openLocationPopup(locationId) {
+    mapLocations.eachLayer(function(marker) {
+        //console.log(marker.feature.properties.identifier);
+        if (marker.feature.properties.identifier === locationId) {
+            marker.openPopup();
+        }
+    });
+}

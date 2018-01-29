@@ -3,14 +3,14 @@
 <Document>
 <name>Locations</name>
 <open>1</open>
-  <Folder>
-    <open>1</open>
     <Placemark id="jackson-tennessee">
+        <ExtendedData>
+            <Data name="identifier">
+                <value>jackson-tennessee</value>
+            </Data>
+        </ExtendedData>
         <name>Tigrett Junior High School, Jackson, Tennessee</name>
-        <description>
-        <![CDATA[
-        In 1962, Gil Scott-Heron participated in the integration of this school along with two other students.
-        ]]>
+        <description><![CDATA[In 1962, Gil Scott-Heron participated in the integration of this school along with two other students.]]>
         </description>
         <MultiGeometry>
             <Point>
@@ -18,14 +18,14 @@
             </Point>
         </MultiGeometry>
     </Placemark>
-
     <Placemark id="harlem-newyork">
+        <ExtendedData>
+            <Data name="identifier">
+                <value>harlem-newyork</value>
+            </Data>
+        </ExtendedData>
         <name>125th Street and Lenox Avenue, Harlem, New York</name>
-        <description>
-        <![CDATA[
-        Scott-Heron titled his first album Small Talk at 125th and Lenox, a reference to the intersection in the heart of Harlem.
-        ]]>
-        </description>
+        <description><![CDATA[Scott-Heron titled his first album Small Talk at 125th and Lenox, a reference to the intersection in the heart of Harlem.]]></description>
         <MultiGeometry>
             <Point>
                 <coordinates>-73.9476837,40.807754</coordinates>
@@ -33,11 +33,13 @@
         </MultiGeometry>
     </Placemark>
     <Placemark id="barnwell-southcarolina">
+        <ExtendedData>
+            <Data name="identifier">
+                <value>barnwell-southcarolina</value>
+            </Data>
+        </ExtendedData>
         <name>Barnwell, South Carolina</name>
-        <description>
-        <![CDATA[
-        Lorem ipsum dolor sit amet.
-        ]]>
+        <description><![CDATA[Lorem ipsum dolor sit amet.]]>
         </description>
         <MultiGeometry>
             <Point>
@@ -46,11 +48,13 @@
         </MultiGeometry>
     </Placemark>
     <Placemark id="johannesburg-southafrica">
+        <ExtendedData>
+            <Data name="identifier">
+                <value>johannesburg-southafrica</value>
+            </Data>
+        </ExtendedData>
         <name>Johannesburg, South Africa</name>
-        <description>
-        <![CDATA[
-        Lorem ipsum dolor sit amet.
-        ]]>
+        <description><![CDATA[Lorem ipsum dolor sit amet.]]>
         </description>
         <MultiGeometry>
             <Point>
@@ -59,11 +63,13 @@
         </MultiGeometry>
     </Placemark>
     <Placemark id="savannah-river-site-southcarolina">
+        <ExtendedData>
+            <Data name="identifier">
+                <value>savannah-river-site-southcarolina</value>
+            </Data>
+        </ExtendedData>
         <name>Savannah River Site, South Carolina</name>
-        <description>
-        <![CDATA[
-        Lorem ipsum dolor sit amet.
-        ]]>
+        <description><![CDATA[Lorem ipsum dolor sit amet.]]>
         </description>
         <MultiGeometry>
             <Point>
@@ -72,11 +78,13 @@
         </MultiGeometry>
     </Placemark>
     <Placemark id="snelling-southcarolina">
+        <ExtendedData>
+            <Data name="identifier">
+                <value>snelling-southcarolina</value>
+            </Data>
+        </ExtendedData>
         <name>Energy Solutions, Snelling, South Carolina</name>
-        <description>
-        <![CDATA[
-        Lorem ipsum dolor sit amet.
-        ]]>
+        <description><![CDATA[Lorem ipsum dolor sit amet.]]>
         </description>
         <MultiGeometry>
             <Point>
@@ -85,12 +93,13 @@
         </MultiGeometry>
     </Placemark>
     <Placemark id="charleston-southcarolina">
+        <ExtendedData>
+            <Data name="identifier">
+                <value>charleston-southcarolina</value>
+            </Data>
+        </ExtendedData>
         <name>Slave Market, Charleston, South Carolina</name>
-        <description>
-        <![CDATA[
-        Lorem ipsum dolor sit amet.
-        ]]>
-        </description>
+        <description><![CDATA[Lorem ipsum dolor sit amet.]]></description>
         <MultiGeometry>
             <Point>
                 <coordinates>-79.9294901,32.777923</coordinates>
@@ -98,12 +107,13 @@
         </MultiGeometry>
     </Placemark>
     <Placemark id="arlington-virginia">
+        <ExtendedData>
+            <Data name="identifier">
+                <value>arlington-virginia</value>
+            </Data>
+        </ExtendedData>
         <name>The Pentagon, Arlington, Virginia</name>
-        <description>
-        <![CDATA[
-        Lorem ipsum dolor sit amet.
-        ]]>
-        </description>
+        <description><![CDATA[Lorem ipsum dolor sit amet.]]></description>
         <MultiGeometry>
             <Point>
                 <coordinates>-77.0573237,38.8719946</coordinates>
@@ -111,12 +121,13 @@
         </MultiGeometry>
     </Placemark>
     <Placemark id="huntsville-alabama">
+        <ExtendedData>
+            <Data name="identifier">
+                <value>huntsville-alabama</value>
+            </Data>
+        </ExtendedData>
         <name>NASA Marshall Space Flight Center, Huntsville, Alabama</name>
-        <description>
-        <![CDATA[
-        Lorem ipsum dolor sit amet.
-        ]]>
-        </description>
+        <description><![CDATA[Lorem ipsum dolor sit amet.]]></description>
         <MultiGeometry>
             <Point>
                 <coordinates>-86.954439,34.6473526</coordinates>
@@ -124,12 +135,13 @@
         </MultiGeometry>
     </Placemark>
     <Placemark id="houston-texas">
+        <ExtendedData>
+            <Data name="identifier">
+                <value>houston-texas</value>
+            </Data>
+        </ExtendedData>
         <name>NASA Johnson Center, Houston, Texas</name>
-        <description>
-        <![CDATA[
-        Lorem ipsum dolor sit amet.
-        ]]>
-        </description>
+        <description><![CDATA[Lorem ipsum dolor sit amet.]]></description>
         <MultiGeometry>
             <Point>
                 <coordinates>-95.0937335,29.5529557</coordinates>
@@ -137,12 +149,13 @@
         </MultiGeometry>
     </Placemark>
     <Placemark id="cape-canaveral-florida">
+        <ExtendedData>
+            <Data name="identifier">
+                <value>cape-canaveral-florida</value>
+            </Data>
+        </ExtendedData>
         <name>Kennedy Spaceflight launch pad, Cape Canaveral, Florida</name>
-        <description>
-        <![CDATA[
-        Lorem ipsum dolor sit amet.
-        ]]>
-        </description>
+        <description><![CDATA[Lorem ipsum dolor sit amet.]]></description>
         <MultiGeometry>
             <Point>
                 <coordinates>-80.7424332,28.6319586</coordinates>
@@ -150,6 +163,5 @@
         </MultiGeometry>
     </Placemark>
 
-  </Folder>
 </Document>
 </kml>
