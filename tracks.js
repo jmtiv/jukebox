@@ -21,3 +21,34 @@ var southcarolina = [
     }
 ];
 
+var whitey = [
+  {
+      start:
+      stop:
+      id: ''
+  },
+];
+
+var revolution = [
+  {
+    start: '0',
+    stop: '42',
+    id: 'harlem-newyork'
+
+  },
+  {
+      start: '66',
+      stop:  '78',
+      id: 'arlington-virginia'
+  },
+  {
+      start: '133',
+      stop:  '147',
+      id: 'harlem-newyork'
+  },
+  {
+      start: '155',
+      stop:  '164',
+      id: 'jackson-tennessee'
+  },
+];
