@@ -20,7 +20,6 @@ var layers = mapLocations._layers;
 
 var playButton1 = document.querySelector('#playBtn1'),
     toggleMuteButton1 = document.querySelector('#toggleMuteBtn1'),
-    timer1 = document.querySelector('#time1'),
     wavesurfer1 = WaveSurfer.create({
         container: '#waveform-1',
         waveColor: '#F4F4E1',
@@ -46,8 +45,6 @@ console.log(southcarolina);
 wavesurfer1.on('audioprocess', function() {
     currentTime = wavesurfer1.getCurrentTime();
     currentTime = Math.trunc(currentTime);
-    timer1.innerHTML = '';
-    timer1.innerHTML = currentTime;
 
     for( var i in revolution) {
         startTime = revolution[i].start;
@@ -71,7 +68,6 @@ function openLocationPopup(locationId) {
 
 var playButton2 = document.querySelector('#playBtn2'),
     toggleMuteButton2 = document.querySelector('#toggleMuteBtn2'),
-    timer2 = document.querySelector('#time2'),
     wavesurfer2 = WaveSurfer.create({
         container: '#waveform-2',
         waveColor: 'violet',
@@ -97,8 +93,7 @@ console.log(whitey);
 wavesurfer2.on('audioprocess', function() {
     currentTime = wavesurfer2.getCurrentTime();
     currentTime = Math.trunc(currentTime);
-    timer2.innerHTML = '';
-    timer2.innerHTML = currentTime;
+
 
     for( var i in whitey) {
         startTime = whitey[i].start;
@@ -123,7 +118,6 @@ function openLocationPopup(locationId) {
 
 var playButton3 = document.querySelector('#playBtn3'),
     toggleMuteButton3 = document.querySelector('#toggleMuteBtn3'),
-    timer3 = document.querySelector('#time3'),
     wavesurfer3 = WaveSurfer.create({
         container: '#waveform-3',
         waveColor: 'violet',
@@ -148,8 +142,6 @@ console.log(southcarolina);
 wavesurfer3.on('audioprocess', function() {
     currentTime = wavesurfer3.getCurrentTime();
     currentTime = Math.trunc(currentTime);
-    timer3.innerHTML = '';
-    timer3.innerHTML = currentTime;
 
     for( var i in southcarolina) {
         startTime = southcarolina[i].start;
