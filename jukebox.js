@@ -24,8 +24,8 @@ var playButton1 = document.querySelector('#playBtn1'),
         container: '#waveform-1',
         waveColor: 'violet',
         progressColor: 'purple',
-        interact: false,
-        cursorWidth: 0
+        interact: true,
+        cursorWidth: 1
     });
 
 wavesurfer1.load('revolution.mp3');
@@ -72,8 +72,8 @@ var playButton2 = document.querySelector('#playBtn2'),
         container: '#waveform-2',
         waveColor: 'violet',
         progressColor: 'purple',
-        interact: false,
-        cursorWidth: 0
+        interact: true,
+        cursorWidth: 1
     });
 
 wavesurfer2.load('whitey.mp3');
@@ -122,8 +122,8 @@ var playButton3 = document.querySelector('#playBtn3'),
         container: '#waveform-3',
         waveColor: 'violet',
         progressColor: 'purple',
-        interact: false,
-        cursorWidth: 0
+        interact: true,
+        cursorWidth: 1
     });
 wavesurfer3.load('southcarolina.mp3');
 
