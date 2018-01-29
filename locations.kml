@@ -99,7 +99,7 @@
             </Data>
         </ExtendedData>
         <name>Slave Market, Charleston, South Carolina</name>
-        <description><![CDATA[Lorem ipsum dolor sit amet.]]></description>
+        <description><![CDATA[Lorem ipsum dolor sit amet. <img src="">]]></description>
         <MultiGeometry>
             <Point>
                 <coordinates>-79.9294901,32.777923</coordinates>
