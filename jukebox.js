@@ -41,6 +41,34 @@ wavesurfer1.on('ready', function() {
     };
 });
 
+console.log(southcarolina);
+
+wavesurfer1.on('audioprocess', function() {
+    currentTime = wavesurfer1.getCurrentTime();
+    currentTime = Math.trunc(currentTime);
+    timer1.innerHTML = '';
+    timer1.innerHTML = currentTime;
+
+    for( var i in revolution) {
+        startTime = revolution[i].start;
+        stopTime = revolution[i].stop;
+        locationId = revolution[i].id;
+        if (startTime == currentTime) {
+            openLocationPopup(locationId);
+        }
+    }
+});
+
+
+function openLocationPopup(locationId) {
+    mapLocations.eachLayer(function(marker) {
+        //console.log(marker.feature.properties.identifier);
+        if (marker.feature.properties.identifier === locationId) {
+            marker.openPopup();
+        }
+    });
+}
+
 var playButton2 = document.querySelector('#playBtn2'),
     toggleMuteButton2 = document.querySelector('#toggleMuteBtn2'),
     timer2 = document.querySelector('#time2'),
@@ -63,6 +91,34 @@ wavesurfer2.on('ready', function() {
         wavesurfer2.toggleMute();
     };
 });
+
+console.log(whitey);
+
+wavesurfer2.on('audioprocess', function() {
+    currentTime = wavesurfer2.getCurrentTime();
+    currentTime = Math.trunc(currentTime);
+    timer2.innerHTML = '';
+    timer2.innerHTML = currentTime;
+
+    for( var i in whitey) {
+        startTime = whitey[i].start;
+        stopTime = whitey[i].stop;
+        locationId = whitey[i].id;
+        if (startTime == currentTime) {
+            openLocationPopup(locationId);
+        }
+    }
+});
+
+
+function openLocationPopup(locationId) {
+    mapLocations.eachLayer(function(marker) {
+        //console.log(marker.feature.properties.identifier);
+        if (marker.feature.properties.identifier === locationId) {
+            marker.openPopup();
+        }
+    });
+}
 
 
 var playButton3 = document.querySelector('#playBtn3'),
@@ -94,7 +150,7 @@ wavesurfer3.on('audioprocess', function() {
     currentTime = Math.trunc(currentTime);
     timer3.innerHTML = '';
     timer3.innerHTML = currentTime;
-    
+
     for( var i in southcarolina) {
         startTime = southcarolina[i].start;
         stopTime = southcarolina[i].stop;
