@@ -22,7 +22,7 @@ var playButton1 = document.querySelector('#playBtn1'),
     toggleMuteButton1 = document.querySelector('#toggleMuteBtn1'),
     wavesurfer1 = WaveSurfer.create({
         container: '#waveform-1',
-        waveColor: '#F4F4E1',
+        waveColor: 'violet',
         progressColor: 'purple',
         interact: false,
         cursorWidth: 0
