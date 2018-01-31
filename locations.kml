@@ -39,7 +39,7 @@
             </Data>
         </ExtendedData>
         <name>Barnwell, South Carolina</name>
-        <description><![CDATA[Lorem ipsum dolor sit amet.]]>
+        <description><![CDATA[Lorem ipsum dolor sit amet. <img src="barnwell-2.jpg">]]>
         </description>
         <MultiGeometry>
             <Point>
@@ -69,7 +69,7 @@
             </Data>
         </ExtendedData>
         <name>Savannah River Site, South Carolina</name>
-        <description><![CDATA[Lorem ipsum dolor sit amet.]]>
+        <description><![CDATA[Lorem ipsum dolor sit amet. <img src="srp6.jpg">]]>
         </description>
         <MultiGeometry>
             <Point>
@@ -84,7 +84,7 @@
             </Data>
         </ExtendedData>
         <name>Energy Solutions, Snelling, South Carolina</name>
-        <description><![CDATA[Lorem ipsum dolor sit amet.]]>
+        <description><![CDATA[Lorem ipsum dolor sit amet. <img src="barnwell-flyer.jpg">]]>
         </description>
         <MultiGeometry>
             <Point>
