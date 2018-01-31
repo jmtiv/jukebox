@@ -47,7 +47,7 @@
             </Point>
         </MultiGeometry>
     </Placemark>
-    <Placemark id="johannesburg-southafrica">
+    <!--<Placemark id="johannesburg-southafrica">
         <ExtendedData>
             <Data name="identifier">
                 <value>johannesburg-southafrica</value>
@@ -61,7 +61,7 @@
                 <coordinates>28.0120338,-26.1968712</coordinates>
             </Point>
         </MultiGeometry>
-    </Placemark>
+    </Placemark>-->
     <Placemark id="savannah-river-site-southcarolina">
         <ExtendedData>
             <Data name="identifier">
