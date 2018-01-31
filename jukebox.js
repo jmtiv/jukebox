@@ -159,6 +159,7 @@ function openLocationPopup(locationId) {
         //console.log(marker.feature.properties.identifier);
         if (marker.feature.properties.identifier === locationId) {
             marker.openPopup();
+            map.setView([marker.getLatLng().lat,marker.getLatLng().lng], 7);
         }
     });
 }
