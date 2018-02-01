@@ -25,7 +25,7 @@
             </Data>
         </ExtendedData>
         <name>125th Street and Lenox Avenue, Harlem, New York</name>
-        <description><![CDATA[Scott-Heron titled his first album Small Talk at 125th and Lenox, a reference to the intersection in the heart of Harlem.]]></description>
+        <description><![CDATA[Scott-Heron titled his first album Small Talk at 125th and Lenox, a reference to the intersection in the heart of Harlem. <img src=smalltalk.jpeg>]]></description>
         <MultiGeometry>
             <Point>
                 <coordinates>-73.9476837,40.807754</coordinates>
@@ -99,7 +99,7 @@
             </Data>
         </ExtendedData>
         <name>Slave Market, Charleston, South Carolina</name>
-        <description><![CDATA[This focus on defense spending continued on Scott-Heron and Jackson’s 1975 release, South Africa to South Carolina. As the title suggests, Scott-Heron made pan-African connections between the struggle against apartheid in Johannesburg and the ongoing fight for racial equality in the US. And, once again, he connected environmental racism and the military-industrial complex, this time on the track, “South Carolina (Barnwell).” <img src="southafrica.jpg">]]></description>
+        <description><![CDATA[As the title suggests, Scott-Heron made pan-African connections between the struggle against apartheid in Johannesburg and the ongoing fight for racial equality in the US.” <img src="southafrica.jpg">]]></description>
         <MultiGeometry>
             <Point>
                 <coordinates>-79.9294901,32.777923</coordinates>
@@ -127,7 +127,7 @@
             </Data>
         </ExtendedData>
         <name>NASA Marshall Space Flight Center, Huntsville, Alabama</name>
-        <description><![CDATA[Lorem ipsum dolor sit amet.]]></description>
+        <description><![CDATA[LSouthern universities secured 57 of NASA’s 130 research grants in 1962, while the location of Huntsville, Alabama’s Marshall Space Flight Center, alongside Redstone Arsenal, in 1960 led to an economic boom for the north Alabama community. The city’s population doubled during the 1960s, its per capita personal income levels rose 20 percent above the rest of the state.]]></description>
         <MultiGeometry>
             <Point>
                 <coordinates>-86.954439,34.6473526</coordinates>
@@ -141,7 +141,7 @@
             </Data>
         </ExtendedData>
         <name>NASA Johnson Center, Houston, Texas</name>
-        <description><![CDATA[Lorem ipsum dolor sit amet.]]></description>
+        <description><![CDATA[NASA constructed the $60 million Manned Spacecraft Center in Houston, Texas beginning in 1961. Twenty-nine contractors followed NASA to Houston, and by 1965, the city led the Southwest in population and manufacturing payroll.  These jobs disproportionately benefited white engineers. Of the 11,447 “engineering and scientific technician” jobs in Houston in 1970, only 427 went to black workers.]]></description>
         <MultiGeometry>
             <Point>
                 <coordinates>-95.0937335,29.5529557</coordinates>
@@ -155,13 +155,68 @@
             </Data>
         </ExtendedData>
         <name>Kennedy Spaceflight launch pad, Cape Canaveral, Florida</name>
-        <description><![CDATA[Lorem ipsum dolor sit amet.]]></description>
+        <description><![CDATA[NASA destroyed the African American town of Allenhurst, Florida, founded in 1872 by former slaves, to build the Vehicle Assembly Building near the launch pad at Cape Canaveral.]]></description>
         <MultiGeometry>
             <Point>
                 <coordinates>-80.7424332,28.6319586</coordinates>
             </Point>
         </MultiGeometry>
     </Placemark>
-
+    <Placemark id="nashville-tennessee">
+        <ExtendedData>
+            <Data name="identifier">
+                <value>nashville-tennessee</value>
+            </Data>
+        </ExtendedData>
+        <name>Johnny Cash</name>
+        <description><![CDATA[<img src="cash.jpg">]]></description>
+        <MultiGeometry>
+            <Point>
+                <coordinates>-87.0661214,36.1863124</coordinates>
+            </Point>
+        </MultiGeometry>
+    </Placemark>
+    <Placemark id="billstown-arkansas">
+        <ExtendedData>
+            <Data name="identifier">
+                <value>billstown-arkansas</value>
+            </Data>
+        </ExtendedData>
+        <name>Glen Campbell</name>
+        <description><![CDATA[<img src="glen.jpg">]]></description>
+        <MultiGeometry>
+            <Point>
+                <coordinates>-93.5797899,33.9809411</coordinates>
+            </Point>
+        </MultiGeometry>
+    </Placemark>
+    <Placemark id="hanahan-southcarolina">
+        <ExtendedData>
+            <Data name="identifier">
+                <value>hanahan-southcarolina</value>
+            </Data>
+        </ExtendedData>
+        <name>Representative Mendel Rivers</name>
+        <description><![CDATA[<img src="rivers.jpg">]]></description>
+        <MultiGeometry>
+            <Point>
+                <coordinates>-80.0318738,32.9387216</coordinates>
+            </Point>
+        </MultiGeometry>
+    </Placemark>
+    <Placemark id="beverly-hills-california">
+        <ExtendedData>
+            <Data name="identifier">
+                <value>beverly-hills-california</value>
+            </Data>
+        </ExtendedData>
+        <name>Jed Clampett</name>
+        <description><![CDATA[<img src="jed.jpg">]]></description>
+        <MultiGeometry>
+            <Point>
+                <coordinates>-118.4346393,34.0825439</coordinates>
+            </Point>
+        </MultiGeometry>
+    </Placemark>
 </Document>
 </kml>
