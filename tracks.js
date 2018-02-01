@@ -38,17 +38,27 @@ var revolution = [
   },
   {
       start: '66',
-      stop:  '78',
+      stop:  '69',
       id: 'arlington-virginia'
   },
   {
+      start: '70',
+      stop:  '80',
+      id: 'hanahan-southcarolina'
+  },
+  {
       start: '133',
-      stop:  '147',
-      id: 'harlem-newyork'
+      stop:  '140',
+      id: 'beverly-hills-california'
   },
   {
       start: '155',
+      stop:  '159',
+      id: 'billstown-arkansas'
+  },
+  {
+      start: '160',
       stop:  '164',
-      id: 'jackson-tennessee'
+      id: 'nashville-tennessee'
   },
 ];
