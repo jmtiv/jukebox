@@ -12,7 +12,7 @@ body {
 }
 
 #map {
-  height: 100vh;
+  height: 150vh;
   width: 50%;
     float: left;
   border: 1px solid black;
