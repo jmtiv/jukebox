@@ -218,5 +218,61 @@
             </Point>
         </MultiGeometry>
     </Placemark>
+    <Placemark id="watts-california">
+        <ExtendedData>
+            <Data name="identifier">
+                <value>watts-california</value>
+            </Data>
+        </ExtendedData>
+        <name>1965 Watts Uprising</name>
+        <description><![CDATA[<img src="watts1965.jpg">]]></description>
+        <MultiGeometry>
+            <Point>
+                <coordinates>-118.2573807,33.9416793</coordinates>
+            </Point>
+        </MultiGeometry>
+    </Placemark>
+    <Placemark id="lincoln-ridge-kentucky">
+        <ExtendedData>
+            <Data name="identifier">
+                <value>lincoln-ridge-kentucky</value>
+            </Data>
+        </ExtendedData>
+        <name>Whitney Young</name>
+        <description><![CDATA[<img src="young.jpg">]]></description>
+        <MultiGeometry>
+            <Point>
+                <coordinates>-85.3927447,38.2184012</coordinates>
+            </Point>
+        </MultiGeometry>
+    </Placemark>
+    <Placemark id="st-louis-missouri">
+        <ExtendedData>
+            <Data name="identifier">
+                <value>st-louis-missouri</value>
+            </Data>
+        </ExtendedData>
+        <name>Roy Wilkins</name>
+        <description><![CDATA[<img src="wilkins.jpg">]]></description>
+        <MultiGeometry>
+            <Point>
+                <coordinates>-90.3835463,38.6530169</coordinates>
+            </Point>
+        </MultiGeometry>
+    </Placemark>
+    <Placemark id="arlington-cemetery">
+        <ExtendedData>
+            <Data name="identifier">
+                <value>arlington-cemetery</value>
+            </Data>
+        </ExtendedData>
+        <name>Jackie Onasis</name>
+        <description><![CDATA[<img src="jackie.jpg">]]></description>
+        <MultiGeometry>
+            <Point>
+                <coordinates>-77.0708597,38.8783252</coordinates>
+            </Point>
+        </MultiGeometry>
+    </Placemark>
 </Document>
 </kml>
