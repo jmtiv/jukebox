@@ -12,11 +12,12 @@ body {
 }
 
 #map {
-  height: 150vh;
+  height: 100vh;
   width: 50%;
-    float: left;
-  border: 1px solid black;
+  float: left;
   position: fixed;
+  top:0;
+  left:0;
   z-index: 4;
 }
 
@@ -24,21 +25,11 @@ h1 {
       font-family: 'Raleway', sans-serif;
       font-size: 100%;
       text-transform: uppercase;
-      margin-top: 10vh;
-      margin-left: 150px;
-      margin-right: 50px;
-      width: 40%;
-      text-align: left;
-      padding-left: 650px;
 }
 
 article {
-    margin-top: 10vh;
-    margin-left: 150px;
-    margin-right: 150px;
-    width: 40%;
-    text-align: left;
-    padding-left: 650px;
+    margin-left: 52%;
+    margin-right: 2%;
 }
 
 .controls{
