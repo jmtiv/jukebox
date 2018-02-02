@@ -6,12 +6,17 @@ var southcarolina = [
     },
     {
         start: '21',
-        stop: '43',
+        stop: '49',
+        id: 'arlington-virginia'
+    },
+    {
+        start: '50',
+        stop: '60',
         id: 'barnwell-southcarolina'
     },
     {
-        start: '44',
-        stop: '65',
+        start: '61',
+        stop: '79',
         id: 'snelling-southcarolina'
     },
     {
