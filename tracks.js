@@ -6,11 +6,11 @@ var southcarolina = [
     },
     {
         start: '21',
-        stop: '59',
+        stop: '43',
         id: 'arlington-virginia'
     },
     {
-        start: '60',
+        start: '44',
         stop: '76',
         id: 'barnwell-southcarolina'
     },
