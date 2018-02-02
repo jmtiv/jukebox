@@ -23,9 +23,19 @@ var southcarolina = [
 
 var whitey = [
   {
-      start: '',
-      stop: '',
-      id: ''
+      start: '33',
+      stop: '41',
+      id: 'huntsville-alabama'
+  },
+  {
+      start: '42',
+      stop: '58',
+      id: 'houston-texas'
+  },
+  {
+      start: '60',
+      stop: '110',
+      id: 'cape-canaveral-florida'
   },
 ];
 
