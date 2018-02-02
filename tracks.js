@@ -32,19 +32,29 @@ var whitey = [
 var revolution = [
   {
     start: '0',
-    stop: '42',
+    stop: '60',
     id: 'harlem-newyork'
 
   },
   {
       start: '66',
-      stop:  '69',
-      id: 'arlington-virginia'
-  },
-  {
-      start: '70',
       stop:  '80',
       id: 'hanahan-southcarolina'
+  },
+  {
+      start: '103',
+      stop: '114',
+      id: 'watts-california'
+  },
+  {
+      start: '116',
+      stop: '124',
+      id: 'lincoln-ridge-kentucky'
+  },
+  {
+      start: '125',
+      stop: '132',
+      id: 'st-louis-missouri'
   },
   {
       start: '133',
@@ -52,7 +62,12 @@ var revolution = [
       id: 'beverly-hills-california'
   },
   {
-      start: '155',
+      start: '150',
+      stop: '155',
+      id: 'arlington-cemetery'
+  },
+  {
+      start: '156',
       stop:  '159',
       id: 'billstown-arkansas'
   },
@@ -60,5 +75,10 @@ var revolution = [
       start: '160',
       stop:  '164',
       id: 'nashville-tennessee'
+  },
+  {
+      start: '165',
+      stop: '170',
+      id: 'jackson-tennessee'
   },
 ];
