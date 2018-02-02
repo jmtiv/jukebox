@@ -11,11 +11,11 @@ var southcarolina = [
     },
     {
         start: '44',
-        stop: '76',
+        stop: '64',
         id: 'barnwell-southcarolina'
     },
     {
-        start: '77',
+        start: '65',
         stop: '87',
         id: 'snelling-southcarolina'
     },
