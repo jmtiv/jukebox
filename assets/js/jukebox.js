@@ -2,7 +2,7 @@ L.mapbox.accessToken = 'pk.eyJ1Ijoibm9yYWJlbmVkaWN0IiwiYSI6ImNpdXllbjdkbzA0aHYye
 var map = L.mapbox.map('map', 'mapbox.outdoors').setView([40,-100],4);
 var info = document.getElementById('info');
 
-var mapLocations = omnivore.kml('locations.kml')
+var mapLocations = omnivore.kml('/locations.kml')
     .on('ready', function() {
       map.fitBounds(mapLocations.getBounds());
       mapLocations.eachLayer(function(layer) {
@@ -28,7 +28,7 @@ var playButton1 = document.querySelector('#playBtn1'),
         cursorWidth: 1
     });
 
-wavesurfer1.load('revolution.mp3');
+wavesurfer1.load('/assets/audio/revolution.mp3');
 
 wavesurfer1.on('ready', function() {
     playButton1.onclick = function() {
@@ -76,7 +76,7 @@ var playButton2 = document.querySelector('#playBtn2'),
         cursorWidth: 1
     });
 
-wavesurfer2.load('whitey.mp3');
+wavesurfer2.load('/assets/audio/whitey.mp3');
 
 wavesurfer2.on('ready', function() {
     playButton2.onclick = function() {
@@ -125,7 +125,7 @@ var playButton3 = document.querySelector('#playBtn3'),
         interact: true,
         cursorWidth: 1
     });
-wavesurfer3.load('southcarolina.mp3');
+wavesurfer3.load('/assets/audio/southcarolina.mp3');
 
 wavesurfer3.on('ready', function() {
     playButton3.onclick = function() {

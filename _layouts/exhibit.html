@@ -1,0 +1,64 @@
+---
+layout: default
+---
+<article>
+    <div id="map"></div>
+    <h1><em>{{ page.title }}</em>{% if page.subtitle %} {{ page.subtitle }}{% endif %}</h1>
+    {{ content }}
+</article>
+
+{% assign rows = site.data[page.data] %}
+{% if rows %}
+{% capture tracks_string %}{% for row in rows %}{% capture current_word %}{{ row.track }}{% endcapture %}{% if current_word == saved_word %}{% else %}{{ row.track }},{% endif %}{% capture saved_word %}{{ current_word }}{% endcapture %}{% endfor %}{% endcapture %}
+
+{{ tracks_string }}
+{% assign tracks_array = tracks_string | split: ","%}
+<script>
+{% for track in tracks_array %}
+var {{ track }} = [
+    {% for row in rows %}{% if row.track == track %}{
+        start: '{{ row.start }}',
+        stop: '{{ row.stop }}',
+        id: '{{ row.id }}'
+    }{% if forloop.last == false %},{% endif %}
+    {% endif %}{% endfor %}
+  ];
+{% endfor %}
+</script>
+{% endif %}
+<script>
+L.mapbox.accessToken = '{{ site.mapbox.accessToken }};
+
+var map = L.mapbox.map('map', 'mapbox.outdoors').setView([40,-100],4);
+var mapLocations = omnivore.kml('{{ site.baseurl }}/{{ page.slug }}.kml')
+    .on('ready', function() {
+      map.fitBounds(mapLocations.getBounds());
+      mapLocations.eachLayer(function(layer) {
+          var content = '<h2>' + layer.feature.properties.name + '</h2>' + '<p>' + layer.feature.properties.description + '</p>';
+          layer.bindPopup(content);
+      });
+    })
+    .addTo(map);
+
+mapLocations.on('click', function(e) {
+    e.layer.openPopup();
+});
+
+var layers = mapLocations._layers;
+
+function openLocationPopup(locationId) {
+    mapLocations.eachLayer(function(marker) {
+        if (marker.feature.properties.identifier === locationId) {
+            marker.openPopup();
+        }
+    });
+}
+
+// Audio players
+var players = document.querySelector('.wavesurfer');
+
+players.each(function(player) {
+    console.log(player.id);
+});
+
+<script src="{{ site.baseurl }}/assets/js/jukebox.js"></script>
