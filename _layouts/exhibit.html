@@ -7,11 +7,11 @@ layout: default
     {{ content }}
 </article>
 
-{% assign rows = site.data[page.data] %}
+{% capture location_data %}{{ page.data }}-locations{% endcapture %}
+{% capture track_data %}{{ page.data }}-tracks{% endcapture %}
+{% assign rows = site.data[track_data] %}
 {% if rows %}
 {% capture tracks_string %}{% for row in rows %}{% capture current_word %}{{ row.track }}{% endcapture %}{% if current_word == saved_word %}{% else %}{{ row.track }},{% endif %}{% capture saved_word %}{{ current_word }}{% endcapture %}{% endfor %}{% endcapture %}
-
-{{ tracks_string }}
 {% assign tracks_array = tracks_string | split: ","%}
 <script>
 {% for track in tracks_array %}
@@ -27,38 +27,87 @@ var {{ track }} = [
 </script>
 {% endif %}
 <script>
-L.mapbox.accessToken = '{{ site.mapbox.accessToken }};
+var locationData = [{% for row in site.data[location_data] %}{
+  "type": "Feature",
+  "properties": {
+    "identifier": "{{row.id}}",
+    "name": "{{row.name}}",
+    "description": "{{row.description}}",
+    "image": "{{row.image}}"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [{{row.coordinates}}]
+  }
+}{% if forloop.last == false %},{% endif %}
+{% endfor %}];
+
+L.mapbox.accessToken = '{{ site.mapbox.accessToken }}';
 
 var map = L.mapbox.map('map', 'mapbox.outdoors').setView([40,-100],4);
-var mapLocations = omnivore.kml('{{ site.baseurl }}/{{ page.slug }}.kml')
-    .on('ready', function() {
-      map.fitBounds(mapLocations.getBounds());
-      mapLocations.eachLayer(function(layer) {
-          var content = '<h2>' + layer.feature.properties.name + '</h2>' + '<p>' + layer.feature.properties.description + '</p>';
-          layer.bindPopup(content);
-      });
-    })
-    .addTo(map);
+var mapLocations = L.geoJSON(locationData, {
+      onEachFeature: onEachFeature
+    }).addTo(map);
+map.fitBounds(mapLocations.getBounds(),{padding:[10,10]});
 
-mapLocations.on('click', function(e) {
-    e.layer.openPopup();
-});
-
-var layers = mapLocations._layers;
-
+function onEachFeature(feature, layer) {
+  if (feature.properties.name && feature.properties.description) {
+    console.log(feature.properties);
+    var content = '<h2>' + feature.properties.name + '</h2>' + '<p>' + feature.properties.description + '</p>';
+    if (feature.properties.image) {
+      content = content + '<img src="{{ site.baseurl }}/assets/images/'+feature.properties.image+'" alt="">';
+    }
+    layer.bindPopup(content);
+  }
+}
 function openLocationPopup(locationId) {
-    mapLocations.eachLayer(function(marker) {
-        if (marker.feature.properties.identifier === locationId) {
-            marker.openPopup();
+    mapLocations.eachLayer(function(layer) {
+        //console.log(marker.feature.properties.identifier);
+        if (layer.feature.properties.identifier === locationId) {
+            layer.openPopup();
+            map.setView([layer.getLatLng().lat,layer.getLatLng().lng], 7);
         }
     });
 }
 
 // Audio players
-var players = document.querySelector('.wavesurfer');
-
-players.each(function(player) {
-    console.log(player.id);
+var players = document.querySelectorAll('.wavesurfer');
+players.forEach(function(player,index) {
+    playerTracks = player.getAttribute('data-tracks');
+    createWaveSurfer(player, window[playerTracks]);
 });
 
-<script src="{{ site.baseurl }}/assets/js/jukebox.js"></script>
+function createWaveSurfer(player, playerTracks) {
+  var playButton = player.querySelector('.play'),
+      toggleButton = player.querySelector('.mute'),
+      audioFilePath = player.getAttribute('data-audio-file'),
+      wavesurfer = WaveSurfer.create({
+          container: '#'+player.id+' .waveform',
+          waveColor: 'violet',
+          progressColor: 'purple',
+          interact: true,
+          cursorWidth: 1
+      });
+  wavesurfer.load(audioFilePath);
+  wavesurfer.on('ready', function() {
+      playButton.onclick = function() {
+        wavesurfer.playPause();
+      };
+      toggleButton.onclick = function() {
+        wavesurfer.toggleMute();
+      };
+    });
+  wavesurfer.on('audioprocess', function() {
+        currentTime = wavesurfer.getCurrentTime();
+        currentTime = Math.trunc(currentTime);
+        for( var i in playerTracks) {
+            startTime = playerTracks[i].start;
+            stopTime = playerTracks[i].stop;
+            locationId = playerTracks[i].id;
+            if (startTime == currentTime) {
+                openLocationPopup(locationId);
+            }
+        }
+    });
+}
+</script>

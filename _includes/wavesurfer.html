@@ -1,4 +1,7 @@
-<div id="waveform-{{ include.track }}" class="wavesurfer">
+<div id="waveform-{{ include.track }}"
+data-tracks="{{ include.track }}"
+data-audio-file="/assets/audio/{{ include.track }}.mp3"
+class="wavesurfer">
     <div class="waveform"></div>
     <div class="controls">
         <button class="play btn btn-primary">Play / Pause</button>
